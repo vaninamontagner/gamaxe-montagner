@@ -322,3 +322,38 @@ h2 {
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+
+/*GRADIENTE LINEAL*/
+
+.enlaces{
+    background: linear-gradient(to left,#CBD6D5,#86BEB5, #727877);
+}
+
+/*ANIMACIONES*/
+
+@keyframes ofertas {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.ofertas{
+    animation-name: ofertas;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*TRANSICIONES*/
+
+.distribuidoresPadre{
+    transition: height 0.5s, width 2s;
+}
+
+.distribuidoresPadre:hover{
+    background-color: lightslategrey;
+    height: 160px;
+    width: 150px;
+}
