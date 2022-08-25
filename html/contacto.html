@@ -25,7 +25,7 @@
       <!-- ETIQUETA SEMANTICA (menú de navegación) -->
       <!-- <nav class="padreNav">
         LISTA NO ORDENADA Y ENLACES RELATIVOS-->
-        <!-- <ul>
+      <!-- <ul>
           <li class="usoDisplay"><a href="../index.html">Inicio</a></li>
           <li class="usoDisplay"><a href="novedades.html">Novedades</a></li>
           <li class="usoDisplay"><a href="promociones.html">Promociones</a></li>
@@ -36,40 +36,46 @@
           <li class="usoDisplay"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav> -->
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">GAMAXE</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="../index.html"
-            >INICIO</a
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GAMAXE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-          <a class="nav-link active" aria-current="page" href="novedades.html"
-            >NOVEDADES</a
-          >
-          <a class="nav-link" href="promociones.html">PROMOCIONES</a>
-          <a class="nav-link" href="productos.html">PRODUCTOS</a>
-          <a class="nav-link" href="distribuidores.html">DISTRIBUIDORES</a>
-          <a class="nav-link" href="contacto.html">CONTACTO</a>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >INICIO</a
+              >
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="novedades.html"
+                >NOVEDADES</a
+              >
+              <a class="nav-link" href="promociones.html">PROMOCIONES</a>
+              <a class="nav-link" href="productos.html">PRODUCTOS</a>
+              <a class="nav-link" href="distribuidores.html">DISTRIBUIDORES</a>
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  <!-- FIN NAVBA -->
+      </nav>
+      <!-- FIN NAVBA -->
     </header>
-  
+
     <main>
       <h1>Contactenos</h1>
       <img
@@ -77,28 +83,31 @@
         src="../img/edificio.jpeg"
         alt="edificio"
       />
-      <form class="formulario">
-        <input type="text" placeholder="Nombre" />
-        <br /><br />
-        <input type="text" placeholder="Apellido" />
-        <br /><br />
-        <input type="text" placeholder="Empresa" />
-        <br /><br />
-        <input type="email" placeholder="Email" />
-        <br /><br />
-        <input type="número" placeholder="(Cód.Área)" />
-        <input type="número" placeholder="Teléfono" /> <br /><br />
-        <input type="número" placeholder="Celular" />
-        <br /><br />
-        <input type="text" placeholder="Mensaje" />
-        <br /><br />
-        <input class="botones" type="submit" />
-        <input class="botones" type="reset" />
-        <br /><br />
-      </form>
+      <div class="contenedorFormulario">
+        <form class="formulario">
+          <input type="text" placeholder="Nombre" />
+          <br /><br />
+          <input type="text" placeholder="Apellido" />
+          <br /><br />
+          <input type="text" placeholder="Empresa" />
+          <br /><br />
+          <input type="email" placeholder="Email" />
+          <br /><br />
+          <input type="número" placeholder="(Cód.Área)" />
+          <br />
+          <input type="número" placeholder="Teléfono" /> <br /><br />
+          <input type="número" placeholder="Celular" />
+          <br /><br />
+          <input type="text" placeholder="Mensaje" />
+          <br /><br />
+          <input class="botones" type="submit" />
+          <input class="botones" type="reset" />
+          <br /><br />
+        </form>
+      </div>
     </main>
 
-    <footer>Gamaxe since 2022</footer>
+    <footer>© 2022 Gamaxe. Todos los derechos reservados.</footer>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

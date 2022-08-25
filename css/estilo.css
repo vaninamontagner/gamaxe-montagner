@@ -69,7 +69,7 @@ ul li {
 }
 
 .parraf{
-    text-align:justify;
+    text-align:left;
 }
 
 .logo{
@@ -78,12 +78,11 @@ ul li {
 
 }
 
-
 .edificio{
     background-image: url(../img/edificio.jpeg);
     background-position: right;
     border-radius: 5px;
-
+    width: 400px;
 }
 
 .imagenesProductos{
@@ -91,17 +90,28 @@ ul li {
     border: black 1px solid;
     height: 100px;
     width: 100px;
-    
 
+}
+
+.contenedorInsumos{
+    text-align: center;
 }
 
 .insumosMedicos{
-    top: 0;
+    /*top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: auto;*/
+    width: 65%;
+    max-width: 1024px;
 }
+
+.contenedorFormulario{
+    text-align: center;
+}
+
+
 
 /*ESTILO DE LA LISTA*/
 
@@ -165,6 +175,7 @@ img {
     border: 1px black solid;
     width: 400px;
     background: linear-gradient(to right, #8D9595,#406866);
+    
 }
 
 /*FIXED*/
@@ -172,7 +183,9 @@ img {
 .whatsapp{
     position: fixed;
     bottom: 20px;
-    left: 150px;
+    /*left: 150px;*/
+    right: 20px;
+    display: flex;  
 }
 
 
@@ -204,6 +217,7 @@ img {
 
 }
 
+
 /*GRID AREAS*/
 
 /*MOBILE FIRST*/
@@ -231,14 +245,14 @@ main {
 
 footer{
     /*GRADIENTE LINEAL*/
-    background: linear-gradient(to right,#BFF3F0, #2FBDB6,#089790);
+    background: linear-gradient(to right,#BFF3F0, #2FBDB6, #65F8DF);
     grid-area: footer;
     /*FLEXBOX*/
     display: flex;
     flex-direction: row ;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 20px;
+    height: 40px;
 }
 
 .enlaces{ 
@@ -246,10 +260,11 @@ footer{
     grid-area: enlaces;
     /*FLEXBOX*/
     display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    justify-content: flex-start;
-    gap: 5px;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:right;
+    gap: 10px;
+    height: 100px;
 
 }
 
@@ -328,8 +343,8 @@ h2 {
 
 /*GRADIENTE LINEAL*/
 
-.enlaces{
-    background: linear-gradient(to left, #727877,#86BEB5, #CBD6D5);
+.enlaces {
+    background: linear-gradient(to left, #E4F7F4, #BBC1C0,#DDE5E4);
 }
 
 /*ANIMACIONES*/

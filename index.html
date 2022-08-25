@@ -12,16 +12,21 @@
       type="image/x-icon"
     />
     <!-- BOOSTSTRAP -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
 
-  <body class="gridPadre container-fluid ">
+  <body class="gridPadre container-fluid">
     <!-- ETIQUETA SEMANTICA (encabezado) -->
     <header>
       <div>
-        <img class="logo" src="img/logo.png" alt="logo">
+        <img class="logo" src="img/logo.png" alt="logo" />
       </div>
       <h1>DROGUERÍA-PRODUCTOS MÉDICOS</h1>
 
@@ -29,8 +34,8 @@
       <hr />
       <!-- ETIQUETA SEMANTICA (menú de navegación) -->
       <!-- <nav class="padreNav"> -->
-        <!-- LISTA NO ORDENADA Y ENLACES RELATIVOS -->
-        <!-- <ul>
+      <!-- LISTA NO ORDENADA Y ENLACES RELATIVOS -->
+      <!-- <ul>
           <li class="usoDisplay"><a href="index.html">Inicio</a></li>
           <li class="usoDisplay">
             <a href="html/novedades.html">Novedades</a>
@@ -47,27 +52,43 @@
           <li class="usoDisplay"><a href="html/contacto.html">Contacto</a></li>
         </ul>
       </nav> -->
-   <!-- NAVBAR -->
-   <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">GAMAXE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-          <a class="nav-link active" aria-current="page" href="html/novedades.html">NOVEDADES</a>
-          <a class="nav-link" href="html/promociones.html">PROMOCIONES</a>
-          <a class="nav-link" href="html/productos.html">PRODUCTOS</a>
-          <a class="nav-link" href="html/distribuidores.html">DISTRIBUIDORES</a>
-          <a class="nav-link" href="html/contacto.html">CONTACTO</a>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GAMAXE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >INICIO</a
+              >
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="html/novedades.html"
+                >NOVEDADES</a
+              >
+              <a class="nav-link" href="html/promociones.html">PROMOCIONES</a>
+              <a class="nav-link" href="html/productos.html">PRODUCTOS</a>
+              <a class="nav-link" href="html/distribuidores.html"
+                >DISTRIBUIDORES</a
+              >
+              <a class="nav-link" href="html/contacto.html">CONTACTO</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  <!-- FIN NAVBA -->
-      
+      </nav>
+      <!-- FIN NAVBA -->
     </header>
 
     <main>
@@ -79,7 +100,7 @@
         profesional en el ámbito de la salud, que percibiendo las necesidades
         tanto en Bahía Blanca como en el país, en lo referido a insumos médicos,
         pensaron en crear Gamaxe, una empresa joven, con muchas ganas de crecer
-        y brindar soluciones asistenciales a las diferentes centros y empresas
+        y brindar soluciones asistenciales a los diferentes centros y empresas
         de salud a nivel nacional tanto públicos como privados, comercializando
         y distribuyendo no solo insumos médicos descartables, sino todo otro
         tipo de insumo relacionado con la salud de la población. Ofrecemos
@@ -88,7 +109,15 @@
         cliente.
       </p>
 
-      <img class="insumosMedicos"  src="../img/insumos-medicos.jpg" alt="insumosmedicos" />
+      <div class="contenedorInsumos">
+        <img
+          class="insumosMedicos"
+          src="img/insumos-medicos.jpg"
+          alt="insumosmedicos"
+        />
+      </div>
+
+      <br /><br />
 
       <h4>Misión</h4>
       <p class="parraf">
@@ -97,6 +126,7 @@
         ético y responsable, gestionando nuestros productos de manera confiable,
         segura y añadiéndole valor a las instituciones médicas.
       </p>
+      <br />
       <h5>Visión</h5>
       <p class="parraf">
         Nuestra visión es llegar a ser reconocidos como una de las empresas de
@@ -104,8 +134,10 @@
         atención y servicios de alta calidad, y ofrecer un espacio de desarrollo
         y capacitación de los colaboradores.
       </p>
+      <br />
       <div>
-        <h6 class="padreFlex">Nuestros Valores</h6>
+        <h6 class="padreFlex">Valores</h6>
+        <br />
         <ul>
           <li class="hijoFlex">Ética</li>
           <p>
@@ -129,28 +161,26 @@
           </p>
         </ul>
       </div>
-      <br /><br /> 
+      <br /><br />
     </main>
 
-    <br /><br /> 
-
     <!-- ENLACES ABSOLUTOS -->
-   <div class="enlaces">
-    <a  href="https://es-la.facebook.com" target="_blank"
-      >Facebook</a
-    >
-    <a  href="https://www.instagram.com" target="_blank">Instagram</a>
-    <a class="whatsapp" href="https://www.whatsapp.com" target="_blank"
-    >Whatsaap</a
-  >
-</div>
-
-   <!-- SALTO DE LINEA -->
-   <BR></BR>
-
+    <div class="enlaces">
+      <a class="twitter" href="https://twitter.com" target="_blank">Twitter</a>
+      <a class="instagram" href="https://www.instagram.com" target="_blank"
+        >Instagram</a
+      >
+      <a class="whatsapp" href="https://www.whatsapp.com" target="_blank"
+        >Whatsaap</a
+      >
+    </div>
     <!-- PIE DE PÁGINA -->
-    <footer>Gamaxe since 2022</footer>
+    <footer>© 2022 Gamaxe. Todos los derechos reservados.</footer>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

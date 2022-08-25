@@ -15,7 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css" />
   </head>
-  <body class="gridPadre">
+  <body class="gridPadre container-fluid">
     <header>
       <!-- TITULO PRINCIPAL -->
       <h1>Productos</h1>
@@ -24,8 +24,8 @@
       <hr />
       <!-- ETIQUETA SEMANTICA (menú de navegación) -->
       <!-- <nav class="padreNav"> -->
-        <!-- LISTA NO ORDENADA Y ENLACES RELATIVOS-->
-        <!-- <ul>
+      <!-- LISTA NO ORDENADA Y ENLACES RELATIVOS-->
+      <!-- <ul>
           <li class="usoDisplay"><a href="../index.html">Inicio</a></li>
           <li class="usoDisplay"><a href="novedades.html">Novedades</a></li>
           <li class="usoDisplay"><a href="promociones.html">Promociones</a></li>
@@ -36,40 +36,46 @@
           <li class="usoDisplay"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav> -->
-        <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">GAMAXE</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="../index.html"
-              >INICIO</a
-            >
-            <a class="nav-link active" aria-current="page" href="novedades.html"
-              >NOVEDADES</a
-            >
-            <a class="nav-link" href="promociones.html">PROMOCIONES</a>
-            <a class="nav-link" href="productos.html">PRODUCTOS</a>
-            <a class="nav-link" href="distribuidores.html">DISTRIBUIDORES</a>
-            <a class="nav-link" href="contacto.html">CONTACTO</a>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GAMAXE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >INICIO</a
+              >
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="novedades.html"
+                >NOVEDADES</a
+              >
+              <a class="nav-link" href="promociones.html">PROMOCIONES</a>
+              <a class="nav-link" href="productos.html">PRODUCTOS</a>
+              <a class="nav-link" href="distribuidores.html">DISTRIBUIDORES</a>
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- FIN NAVBA -->
+      </nav>
+      <!-- FIN NAVBA -->
     </header>
-  
+
     <main>
       <h2>Portfolio de productos</h2>
 
@@ -80,7 +86,7 @@
             src="../img/camisolines descartables.webp"
             alt="camisolines"
           />
-          <p>Camisolín Descartable 20 Gr Con Puño Elastizado</p>
+          <p>Camisolín Descartable</p>
         </div>
         <div class="col">
           <img
@@ -106,9 +112,11 @@
           />
           <p>Barbijo Tricapa Negro</p>
         </div>
+        </div>
       </div>
     </main>
-    <footer>Gamaxe since 2022</footer>
+
+    <footer>© 2022 Gamaxe. Todos los derechos reservados.</footer>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
