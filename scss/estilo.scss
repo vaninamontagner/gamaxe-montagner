@@ -1,0 +1,367 @@
+
+
+/*ESTILO DE CSS*/
+
+h1 {
+    color:$color-principal;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+  }
+
+h2 {
+    color:$color-principal;
+    background-color: #00BFFF;
+    text-transform: uppercase;
+  }
+
+h3{
+    color:$color-principal;
+
+}
+
+h4 {
+    color:$color-principal;
+    
+}
+h5 {
+    color:$color-principal;
+    
+}
+
+h6 {
+    color: $color-principal;
+
+}
+
+li a, ul li {
+    color: $color-principal;
+  }
+  
+  body {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  a {
+    text-decoration: none;
+  
+    /*SIN SUBRAYADO*/
+  }
+  
+  ul li {
+    text-transform: uppercase;
+  }
+
+  /*TITULO EN MAYUSCULA*/
+
+.parrafo {
+    text-align:center;
+    /*ALINEACION DE TEXTO*/
+
+    font-family:'Times New Roman', Times, serif;
+    /*FUENTE*/
+}
+
+.parraf{
+    text-align:left;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+
+}
+
+.edificio{
+    background-image: url(../img/edificio.jpeg);
+    background-position: right;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.imagenesProductos{
+    border-radius: 4px;
+    border: black 1px solid;
+    height: 100px;
+    width: 100px;
+
+}
+
+.contenedorInsumos{
+    text-align: center;
+}
+
+.insumosMedicos{
+    width: 65%;
+    max-width: 1024px;
+}
+
+.contenedorFormulario{
+    text-align: center;
+}
+
+
+/*ESTILO DE LA LISTA*/
+
+li{
+    list-style-type: none;
+}
+
+/*FONDO*/
+
+body {
+    background-color:ghostwhite;
+}
+
+/*IMAGEN DE FONDO*/
+header {
+    background-image: url('../img/logo-removebg-preview.png');
+
+
+    background-repeat: no-repeat;
+
+    background-position: right;
+
+    background-size: cover;
+}
+
+/*ETIQUETAS EN BLOQUE CAMBIADAS A ETIQUETAS EN LINEA*/
+.usoDisplay{
+    display: inline-block;
+    margin: auto;
+    padding: 6px;
+  
+}
+
+
+/*BOX MODELLING*/
+
+/*Border*/
+.contenedor {
+    border: 1px black solid;
+    border-radius: 3px;
+    
+}
+
+/*Margin, padding y border*/
+h2 {
+    margin: 5px;
+    padding: 0,5px;
+    border: 1px black solid;
+}
+
+
+/*POSITION*/
+
+img {
+    width: 500px;
+    height: 250px;
+    
+}
+
+.formulario{
+    border: 1px black solid;
+    width: 400px;
+    background: linear-gradient(to right, #8D9595,#406866);
+    
+}
+
+
+/*FIXED*/
+
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;  
+}
+
+/*FLEXBOX*/
+.padreFlex{
+    display: flex;
+    justify-content:flex-start;
+}
+.padreNav{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.enlacesFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+}
+
+.distribuidoresPadre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ofertasPadre{
+     display: flex;
+     flex-direction: column;
+
+}
+
+/*GRID AREAS*/
+
+/*MOBILE FIRST*/
+
+header {
+
+    background-color: powderblue;
+    grid-area: header;
+    
+}
+
+nav {
+    background-color:darkgrey;
+    grid-area: nav;
+    /*BOX MODELLING*/
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+main {
+    background-color:gainsboro;
+    grid-area: main;
+
+}
+
+footer{
+    /*GRADIENTE LINEAL*/
+    background: linear-gradient(to right,#BFF3F0, #2FBDB6, #65F8DF);
+    grid-area: footer;
+    /*FLEXBOX*/
+    display: flex;
+    flex-direction: row ;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 40px;
+}
+
+.enlaces{ 
+    background-color:beige;
+    grid-area: enlaces;
+    /*FLEXBOX*/
+    display: flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:right;
+    gap: 10px;
+    height: 100px;
+
+}
+
+/*MEDIA QUERIES*/
+
+/*VERSION TABLETA*/
+/* Si la pantalla tiene un minimo de 768px ejecuto el siguiente código*/
+
+@media (min-widht:768px) {
+
+    .gridPadre{
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main main"
+            "enlaces enlaces"
+            "footer footer"
+            ;
+    }
+}
+
+/*VERSION DE ESCRITORIO*/
+
+@media (min-widht:1024px) {
+    .gridPadre{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "enlaces enlaces enlaces"
+        "footer footer footer"
+        ;
+
+    }
+}
+
+/*TRANSFORMACIONES*/
+
+.botones{
+    transform: translate(10px, 10px);
+    background: linear-gradient(to right, white, #989F9F );
+}
+
+/*TRANSICIONES*/
+
+.ofertas{
+    transition: height 0.5s, width 2s ;
+
+}
+
+.ofertas:hover{
+    background-color: red;
+    height: 50px;
+    width: 170px;
+}
+
+/*ANIMACIONES*/
+
+@keyframes texto {
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity: 100%;
+    }
+   }
+   
+   h2 {
+       animation-name: texto;
+       animation-duration: 2s;
+       animation-iteration-count: infinite;
+   }
+   
+   /*GRADIENTE LINEAL*/
+   
+   .enlaces {
+       background: linear-gradient(to left, #E4F7F4, #BBC1C0,#DDE5E4);
+   }
+
+   /*ANIMACIONES*/
+
+@keyframes ofertas {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.ofertas{
+    animation-name: ofertas;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*TRANSICIONES*/
+
+.distribuidoresPadre{
+    transition: height 0.5s, width 2s;
+}
+
+.distribuidoresPadre:hover{
+    background-color: lightslategrey;
+    height: 180px;
+    width: 150px;
+}
+
+/*VARIABLES SASS*/
+
+$color-principal:black
